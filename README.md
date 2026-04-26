@@ -76,8 +76,7 @@ A music recommendation system built on a 172-entry survey dataset of Vanderbilt 
 
 ## Results
 
-Evaluation metric: **Genre Match@5** (leave-one-out, users with ≥2 submissions).  
-Exact song hit rate is 0 for all models by construction — with 170 unique songs across 172 rows, the held-out song almost never appears in another user's pool.
+Evaluation metric: **Genre Match@5** (leave-one-out, users with ≥2 submissions).
 
 | Model | Genre Match@5 |
 |-------|:-------------:|
@@ -104,7 +103,3 @@ from content_knn import ContentKNN
 from collab_knn import CollabKNN
 from kmeans_recommender import KMeansRecommender
 ```
-=======
-# Song-Rec-Project-for-CS-3262
-This is a song rec project that uses KNN and K-means Clustering for song recommendation
->>>>>>> 83f002304bfdc2284d42df42952d51254d939687

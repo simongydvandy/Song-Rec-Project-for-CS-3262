@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Song Recommendation Project — CS 3262 Applied Machine Learning
 
 **Team:** Simon (Yiding) Gou (`gouy`) · Xizhi Li (`lix71`)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Song Recommendation Project — CS 3262 Applied Machine Learning
 
 **Team:** Simon (Yiding) Gou (`gouy`) · Xizhi Li (`lix71`)
@@ -104,3 +105,7 @@ from content_knn import ContentKNN
 from collab_knn import CollabKNN
 from kmeans_recommender import KMeansRecommender
 ```
+=======
+# Song-Rec-Project-for-CS-3262
+This is a song rec project that uses KNN and K-means Clustering for song recommendation
+>>>>>>> 83f002304bfdc2284d42df42952d51254d939687

@@ -3,16 +3,23 @@
 **Team:** Simon (Yiding) Gou (`gouy`) · Xizhi Li (`lix71`)
 
 ---
-
+## 1. Problem Statement
+The recommendation task involves developing a music recommendation system using a 172-entry survey dataset containing Vanderbilt students' demographic information and song preferences. The approach compares distinct machine learning methodologies to generate recommendations. A K-Nearest Neighbors (KNN) model is utilized for similarity-based recommendations, combining content-based and collaborative filtering. An unsupervised K-means clustering model was initially implemented but yielded poor recommendations. A supervised Random Forest model was subsequently developed to replace the clustering approach and improve predictive accuracy.
 ## Overview
-
-A music recommendation system built on a 172-entry survey dataset of Vanderbilt students, each sharing demographic information and a song they enjoy. We implement and compare two approaches:
-
 | Approach | Owner | Type |
 |----------|-------|------|
+| EDA | Simon and Xizhi |
 | KNN (content-based + collaborative filtering) | Simon | Similarity-based |
-| K-means clustering | Xizhi | Unsupervised clustering |
+| K-means clustering | Xizhi | Unsupervised clustering | (This was done first but has a poor recommendation, so the Random Forest is done later)
+|Randrom Forest | Xizhi | Supervised learning |
+Note: For EDA and data preprocessings, Simon and Xizhi finished them collaboratively.
 
+## 2. Data Description
+This analysis will use the Song Recommendations Dataset, sourced from student-provided survey responses. The song dataset provides information on individual song preferences and the demographic backgrounds of the respondents. It includes 172 entries and contains 10 variables that capture various aspects of each recommendation.
+
+The dataset features
+
+Timestamp (string): The date and time the recommendation was submitted. Your Unique ID (string): A unique, consistent identifier for each respondent. Your Gender (string): The gender identity of the user. Your hometown (string): The type of environment where the user was raised (e.g., City, Suburban, Rural). What language do you primarily use in daily life? (string): The primary language or languages spoken by the respondent. Song name (string): The title of the recommended musical track. Artist (string): The musician or group who performed the song. Genre (string): The musical category or style of the song. Language of the song (string): The language(s) featured in the song's lyrics. Song release year (string): The time period or specific era of the song’s release (e.g., 2020+, 2010–2019).
 ---
 
 ## Dataset
@@ -45,7 +52,7 @@ A music recommendation system built on a 172-entry survey dataset of Vanderbilt 
 └── notebooks/
     ├── 01_EDA.ipynb            # Exploratory data analysis
     ├── 02_preprocessing.ipynb  # Feature matrix walkthrough
-    ├── 03_kmeans_xizhi.ipynb   # K-means: elbow analysis, cluster profiles
+    ├── 03_kmeans_xizhi.ipynb   # K-means: elbow analysis, cluster profiles; 
     └── 04_knn_simon.ipynb      # KNN models + full 3-way comparison
 ```
 

@@ -1,4 +1,6 @@
 # Song Recommendation Project — CS 3262 Applied Machine Learning
+Link for our project on Git Hub:
+https://github.com/simongydvandy/Song-Rec-Project-for-CS-3262
 
 **Team:** Simon (Yiding) Gou (`gouy`) · Xizhi Li (`lix71`)
 
